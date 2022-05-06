@@ -51,6 +51,7 @@ function showMessageBox(icon, content) {
 let audio = null;
 
 function filterSearchResult(word, result) {
+  console.log(result);
   loading.classList.remove("active");
   searchResultArea.classList.add("active");
   if (result.title) {
@@ -114,7 +115,7 @@ function tagsReSearch(word) {
 
 async function getSearchData(word) {
   loading.classList.add("active");
-  introduceArea.classList.add("unactive");
+  introduceArea.classList.add("inactive");
   refreshDictionary();
   try {
     let searchData = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);

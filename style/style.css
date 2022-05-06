@@ -62,7 +62,7 @@ body {
   color: #00aeff;
   border-left: .25rem solid #00a6f3;
 }
-.message-box.unactive {
+.message-box.inactive {
   display: none;
 }
 input {
@@ -108,7 +108,7 @@ button:active {
 .loading-container.active {
   display: block !important;
 }
-.introduce.unactive {
+.introduce.inactive {
   display: none;
 }
 .search-result-area::-webkit-scrollbar {
@@ -117,7 +117,7 @@ button:active {
 .search-result-area.active {
   display: block !important;
 }
-.fa-volume-up.unactive {
+.fa-volume-up.inactive {
   color: #d6d6d6;
   pointer-events: none;
 }
